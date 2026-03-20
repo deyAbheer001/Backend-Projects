@@ -48,3 +48,16 @@ setInterval(() => {
 
     // render();
 }, 400)
+
+addEventListener('keydown', (e) => {
+
+    if(e.key === 'ArrowLeft') {
+        direction = 'left';
+    } else if(e.key === 'ArrowRight') {
+        direction = 'right';
+    } else if(e.key === 'ArrowUp') {
+        direction = 'up';
+    } else if(e.key === 'ArrowDown') {
+        direction = 'down';
+    }
+})
